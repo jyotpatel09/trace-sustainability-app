@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trace — Sustainability Tracking & Batch Resource Reporting
 
-## Getting Started
+Trace is a mobile-first sustainability tracking platform designed for Indian SME manufacturers. The application helps factories track operational resource usage batch-by-batch and generate auditable sustainability report cards.
 
-First, run the development server:
+Built for the Wooble Sustainability & Systems Thinking Hackathon.
+
+---
+
+## Problem
+
+Small and medium manufacturers often store sustainability-related operational data across disconnected systems such as electricity bills, handwritten registers, WhatsApp invoices, and manual logs. When buyers request sustainability metrics like water usage per production unit, factories struggle to provide fast and defensible answers.
+
+Trace simplifies this process by converting scattered operational logs into structured sustainability report cards.
+
+---
+
+## Features
+
+* Batch-based production tracking
+* Water, electricity, fuel, and waste logging
+* Sustainability scoring engine
+* Resource usage per-unit calculations
+* Batch comparison system
+* Printable A4 PDF report cards
+* Demo Factory with realistic mock manufacturing data
+* Mobile-first responsive design
+* Optimized for low-end Android devices
+
+---
+
+## Sustainability Score Logic
+
+The score starts at 100 and deducts points based on:
+
+* Water usage per unit
+* Electricity usage per unit
+* Fuel usage
+* Waste disposal method
+* Tanker water usage
+
+The formula follows the exact hackathon specification.
+
+---
+
+## Tech Stack
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* shadcn/ui
+* Recharts
+
+---
+
+## Demo Factory
+
+The app includes a fully preloaded demo manufacturing environment with:
+
+* 20+ realistic production batches
+* 6 months of operational data
+* Multiple manufacturing industries
+* Resource usage variations
+* Sustainability score comparisons
+
+---
+
+## Mobile-First Design
+
+Trace was specifically optimized for:
+
+* Low-end Android devices
+* 2GB RAM phones
+* Chrome mobile browser
+* Fast 4G loading
+* Touch-friendly interactions
+
+---
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Hackathon Submission
 
-To learn more about Next.js, take a look at the following resources:
+This project was created for the Wooble Sustainability & Systems Thinking Hackathon.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Focus areas:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* usability
+* operational simplicity
+* sustainability transparency
+* printable reporting
+* mobile accessibility
