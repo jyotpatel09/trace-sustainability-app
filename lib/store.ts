@@ -1,10 +1,10 @@
-import { Batch } from "@/types";
+import { Batch, SustainabilityGrade } from "@/types";
 import { calculateBatchScore, ScoreResult } from "./scoring";
 import { grade, MOCK_BATCHES } from "./mock-data";
 
 export interface ScoreResultWithGrade extends Batch {
   scoreResult: ScoreResult;
-  grade: string;
+  grade: SustainabilityGrade;
 }
 
 const LOCAL_STORAGE_KEY = "trace_batches";
